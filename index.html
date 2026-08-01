@@ -1384,9 +1384,11 @@
                     <h4>Send a Message</h4>
                     <p>I'll get back to you within 24 hours.</p>
 
+                    <!-- IMPORTANT: method="POST" is present and action points to FormSubmit -->
                     <form id="contactForm" action="https://formsubmit.co/webpentester404@gmail.com" method="POST">
                         <input type="text" name="_honey" style="display:none" />
                         <input type="hidden" name="_captcha" value="false" />
+                        <!-- After submission, redirect to a thank you page (or stay on same page) -->
                         <input type="hidden" name="_next" value="#" />
 
                         <div class="form-group">
@@ -1518,8 +1520,10 @@
                 });
             });
 
+            // ---------- FORM SUBMISSION HANDLER REMOVED ----------
+            // The form now submits normally via POST. No JavaScript interference.
+
         })();
     </script>
-
 </body>
 </html>
