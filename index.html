@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
 
-    <!-- Font Awesome 6 (Free) -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <style>
@@ -237,7 +237,6 @@
             overflow: hidden;
         }
 
-        /* Animated background glow */
         .hero-glow {
             position: absolute;
             top: -30%;
@@ -321,7 +320,6 @@
             font-weight: 500;
         }
 
-        /* Typing effect */
         .hero-typing-wrap {
             margin-top: 18px;
             display: flex;
@@ -396,7 +394,6 @@
             transform: translateY(-3px);
         }
 
-        /* Hero visual (right side) */
         .hero-visual {
             display: flex;
             justify-content: center;
@@ -477,7 +474,6 @@
             font-weight: 700;
         }
 
-        /* floating particles */
         .particle {
             position: absolute;
             border-radius: 50%;
@@ -1176,7 +1172,6 @@
                             Law <span>+</span> <br />Security
                         </div>
                     </div>
-                    <!-- floating particles -->
                     <span class="particle"></span>
                     <span class="particle"></span>
                     <span class="particle"></span>
@@ -1197,7 +1192,7 @@
                         <span class="highlight">Technology</span>
                     </h2>
                     <p>
-                        I am <strong>MD WASIMUL BARI SHAH</strong>, a final-year student in the
+                        I am <strong>MD WASIMUL BARI SHAH</strong>, a <strong>2nd Year</strong> student in the
                         <strong>Department of Law and Land Administration</strong> at the
                         <strong>University of Rajshahi</strong>.
                         My academic journey in law is complemented by a deep passion for
@@ -1276,7 +1271,6 @@
             </div>
 
             <div class="skills-grid">
-                <!-- Skill 1 -->
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3>Web &amp; App Development</h3>
@@ -1294,7 +1288,6 @@
                     </div>
                 </div>
 
-                <!-- Skill 2 -->
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-shield-halved"></i></div>
                     <h3>Penetration Testing &amp; Security</h3>
@@ -1312,7 +1305,6 @@
                     </div>
                 </div>
 
-                <!-- Skill 3 -->
                 <div class="skill-card">
                     <div class="skill-icon"><i class="fas fa-bug"></i></div>
                     <h3>Bug Bounty Hunting</h3>
@@ -1364,7 +1356,7 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="WhatsApp" title="WhatsApp">
+                        <a href="https://wa.me/8801704527486" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" title="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                         <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
@@ -1376,7 +1368,7 @@
                         <a href="#" class="social-link" aria-label="Twitter / X" title="Twitter / X">
                             <i class="fab fa-x-twitter"></i>
                         </a>
-                        <a href="#" class="social-link" aria-label="Facebook" title="Facebook">
+                        <a href="https://www.facebook.com/share/1Dw8euU4VD/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook" title="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
@@ -1392,18 +1384,22 @@
                     <h4>Send a Message</h4>
                     <p>I'll get back to you within 24 hours.</p>
 
-                    <form id="contactForm" action="#" method="POST">
+                    <form id="contactForm" action="https://formsubmit.co/webpentester404@gmail.com" method="POST">
+                        <input type="text" name="_honey" style="display:none" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_next" value="#" />
+
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="Your name" required />
+                            <input type="text" id="name" name="name" placeholder="Your name" required />
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="you@example.com" required />
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required />
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" placeholder="How can I help you?" required></textarea>
+                            <textarea id="message" name="message" placeholder="How can I help you?" required></textarea>
                         </div>
                         <button type="submit" class="btn-submit">
                             <i class="fas fa-paper-plane" style="margin-right: 8px;"></i> Send Message
@@ -1459,7 +1455,7 @@
 
                 if (!isDeleting && charIndex === currentPhrase.length) {
                     isDeleting = true;
-                    typingSpeed = 2000; // pause before deleting
+                    typingSpeed = 2000;
                 } else if (isDeleting && charIndex === 0) {
                     isDeleting = false;
                     phraseIndex = (phraseIndex + 1) % phrases.length;
@@ -1495,51 +1491,12 @@
                 hamburger.setAttribute('aria-expanded', isOpen);
             });
 
-            // Close menu on link click (mobile)
             navLinks.querySelectorAll('a').forEach(function(link) {
                 link.addEventListener('click', function() {
                     navLinks.classList.remove('open');
                     hamburger.classList.remove('active');
                     hamburger.setAttribute('aria-expanded', 'false');
                 });
-            });
-
-            // ---------- CONTACT FORM (demo) ----------
-            const form = document.getElementById('contactForm');
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const name = document.getElementById('name').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const message = document.getElementById('message').value.trim();
-
-                if (!name || !email || !message) {
-                    alert('Please fill in all fields.');
-                    return;
-                }
-
-                // Simple email validation
-                if (!email.includes('@') || !email.includes('.')) {
-                    alert('Please enter a valid email address.');
-                    return;
-                }
-
-                // Simulate sending
-                const btn = form.querySelector('.btn-submit');
-                const originalText = btn.innerHTML;
-                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                btn.disabled = true;
-
-                setTimeout(function() {
-                    btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-                    btn.style.background = '#4caf50';
-
-                    setTimeout(function() {
-                        btn.innerHTML = originalText;
-                        btn.style.background = '';
-                        btn.disabled = false;
-                        form.reset();
-                    }, 2500);
-                }, 1800);
             });
 
             // ---------- SMOOTH SCROLL (anchor links) ----------
