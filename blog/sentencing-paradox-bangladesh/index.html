@@ -580,6 +580,101 @@
     scroll-behavior:auto!important;
   }
 }
+
+/* =========================================================
+   FINAL ARTICLE LAYOUT SAFETY PATCH
+   Prevents global style.css nav/toc/aside rules from leaking
+   into the article sidebar and breadcrumb.
+   ========================================================= */
+
+.article-page nav{
+  position:static !important;
+  inset:auto !important;
+  float:none !important;
+  transform:none !important;
+}
+
+.article-page .breadcrumb{
+  position:relative !important;
+  display:flex !important;
+  width:100% !important;
+  height:auto !important;
+  margin:0 0 30px !important;
+  padding:0 !important;
+  overflow:visible !important;
+}
+
+.article-page .article-sidebar{
+  position:sticky !important;
+  top:95px !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:285px !important;
+  height:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  float:none !important;
+  display:block !important;
+  align-self:start !important;
+}
+
+.article-page .sidebar-card{
+  position:static !important;
+  width:100% !important;
+  height:auto !important;
+  box-sizing:border-box !important;
+  float:none !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+.article-page .article-sidebar .toc{
+  position:static !important;
+  inset:auto !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  justify-content:flex-start !important;
+  gap:4px !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  overflow:visible !important;
+  float:none !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+
+.article-page .article-sidebar .toc a{
+  position:static !important;
+  inset:auto !important;
+  display:block !important;
+  width:100% !important;
+  box-sizing:border-box !important;
+  float:none !important;
+  margin:0 !important;
+  padding:9px 10px !important;
+  transform:none !important;
+  white-space:normal !important;
+}
+
+@media(max-width:900px){
+  .article-page .article-sidebar{
+    position:static !important;
+    max-width:none !important;
+  }
+
+  .article-page .sidebar-card.toc-card{
+    display:none !important;
+  }
+}
+
+@media(max-width:650px){
+  .article-page .breadcrumb{
+    margin-bottom:22px !important;
+  }
+}
+
 </style>
 
 <!-- =========================================================
