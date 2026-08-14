@@ -1,452 +1,1213 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
 
-<title>Blog — Wasim Dev | Law, Technology & Cybersecurity</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
-<meta name="description" content="Read Wasim Dev's articles and insights on law, technology, web development, cybersecurity, penetration testing, bug bounty research and digital security.">
+  <!-- ==============================
+       PRIMARY SEO
+  =============================== -->
 
-<meta name="author" content="MD Wasimul Bari Shah">
-<meta name="robots" content="index, follow, max-image-preview:large">
+  <title>
+    Wasim Dev Blog | Law, Technology, Cybersecurity & Research
+  </title>
 
-<link rel="canonical" href="https://wasimdev.me/blog/">
+  <meta
+    name="description"
+    content="Wasim Dev's research and writing on law, technology, cybersecurity, web development and digital security. Explore legal research, software development and security insights by MD Wasimul Bari Shah."
+  >
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog — Wasim Dev | Law, Technology & Cybersecurity">
-<meta property="og:description" content="Articles and insights by Wasim Dev covering law, technology, web development and cybersecurity.">
-<meta property="og:url" content="https://wasimdev.me/blog/">
-<meta property="og:site_name" content="Wasim Dev">
+  <meta
+    name="author"
+    content="MD Wasimul Bari Shah"
+  >
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blog — Wasim Dev | Law, Technology & Cybersecurity">
-<meta name="twitter:description" content="Articles and insights by Wasim Dev covering law, technology, web development and cybersecurity.">
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  >
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta
+    name="googlebot"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  >
 
-<link rel="stylesheet" href="/assets/style.css">
+  <link
+    rel="canonical"
+    href="https://wasimdev.me/blog/"
+  >
 
-<!-- Website Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Wasim Dev",
-  "url": "https://wasimdev.me/",
-  "publisher": {
+
+  <!-- ==============================
+       OPEN GRAPH
+  =============================== -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:title"
+    content="Wasim Dev Blog | Law, Technology, Cybersecurity & Research"
+  >
+
+  <meta
+    property="og:description"
+    content="Research, articles and insights by Wasim Dev on law, technology, cybersecurity, web development and digital security."
+  >
+
+  <meta
+    property="og:url"
+    content="https://wasimdev.me/blog/"
+  >
+
+  <meta
+    property="og:site_name"
+    content="Wasim Dev"
+  >
+
+  <meta
+    property="og:locale"
+    content="en_US"
+  >
+
+
+  <!-- ==============================
+       TWITTER / X
+  =============================== -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Wasim Dev Blog | Law, Technology, Cybersecurity & Research"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Research, articles and insights by Wasim Dev on law, technology, cybersecurity, web development and digital security."
+  >
+
+
+  <!-- ==============================
+       THEME / MOBILE
+  =============================== -->
+
+  <meta
+    name="theme-color"
+    content="#050505"
+  >
+
+  <meta
+    name="color-scheme"
+    content="dark"
+  >
+
+
+  <!-- ==============================
+       FONTS
+  =============================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- ==============================
+       MAIN CSS
+  =============================== -->
+
+  <link
+    rel="stylesheet"
+    href="/assets/style.css"
+  >
+
+
+  <!-- ==================================================
+       PERSON / AUTHOR SCHEMA
+  =================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "Person",
-    "name": "MD Wasimul Bari Shah",
-    "url": "https://wasimdev.me/"
-  }
-}
-</script>
-
-<!-- Blog Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "@id": "https://wasimdev.me/blog/#blog",
-  "name": "Wasim Dev Blog",
-  "description": "Articles and insights on law, technology, web development and cybersecurity.",
-  "url": "https://wasimdev.me/blog/",
-  "inLanguage": "en",
-  "author": {
-    "@type": "Person",
+    "@id": "https://wasimdev.me/#person",
     "name": "MD Wasimul Bari Shah",
     "alternateName": [
       "Wasim Dev",
-      "Wasim",
-      "WasimDev"
+      "WasimDev",
+      "Wasim Shah",
+      "Wasim"
     ],
-    "url": "https://wasimdev.me/"
-  },
-  "publisher": {
-    "@type": "Person",
-    "name": "MD Wasimul Bari Shah"
+    "url": "https://wasimdev.me/",
+    "jobTitle": "Web Developer & Security Researcher",
+    "description": "Law student, Web & App Developer, Penetration Tester and Bug Bounty Hunter from Bangladesh.",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Rajshahi",
+      "url": "https://www.ru.ac.bd/"
+    },
+    "knowsAbout": [
+      "Law",
+      "Land Administration",
+      "Criminal Justice",
+      "Legal Research",
+      "Web Development",
+      "App Development",
+      "Cybersecurity",
+      "Penetration Testing",
+      "Bug Bounty Hunting",
+      "Digital Security",
+      "Technology"
+    ]
   }
-}
-</script>
+  </script>
+
+
+  <!-- ==================================================
+       BLOG COLLECTION PAGE SCHEMA
+  =================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://wasimdev.me/blog/#webpage",
+    "url": "https://wasimdev.me/blog/",
+    "name": "Wasim Dev Blog",
+    "headline": "Wasim Dev Blog | Law, Technology, Cybersecurity & Research",
+    "description": "Research, articles and insights by Wasim Dev on law, technology, cybersecurity, web development and digital security.",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://wasimdev.me/#website"
+    },
+    "author": {
+      "@id": "https://wasimdev.me/#person"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Law"
+      },
+      {
+        "@type": "Thing",
+        "name": "Technology"
+      },
+      {
+        "@type": "Thing",
+        "name": "Cybersecurity"
+      },
+      {
+        "@type": "Thing",
+        "name": "Web Development"
+      },
+      {
+        "@type": "Thing",
+        "name": "Legal Research"
+      }
+    ]
+  }
+  </script>
+
+
+  <!-- ==================================================
+       BREADCRUMB SCHEMA
+  =================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wasimdev.me/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://wasimdev.me/blog/"
+      }
+    ]
+  }
+  </script>
+
+
+  <!-- ==================================================
+       BLOG ARTICLE LIST
+  =================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Wasim Dev Blog Articles",
+    "url": "https://wasimdev.me/blog/",
+    "numberOfItems": 6,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "The Sentencing Paradox in Bangladesh",
+        "url": "https://wasimdev.me/blog/sentencing-paradox-bangladesh/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Building Modern Web Applications",
+        "url": "https://wasimdev.me/blog/modern-web-applications/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Understanding Web Application Security",
+        "url": "https://wasimdev.me/blog/web-application-security/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "A Practical Introduction to Bug Bounty Hunting",
+        "url": "https://wasimdev.me/blog/bug-bounty-hunting/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Why Cybersecurity Matters in the Digital Age",
+        "url": "https://wasimdev.me/blog/cybersecurity-digital-age/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "From Idea to Production: Building Better Projects",
+        "url": "https://wasimdev.me/blog/from-idea-to-production/"
+      }
+    ]
+  }
+  </script>
 
 </head>
 
+
 <body>
 
-<nav>
-<div class="container nav-inner">
 
-<a class="logo" href="/">WASIM<span>DEV</span></a>
+  <!-- ==================================================
+       NAVIGATION
+  =================================================== -->
 
-<ul class="nav-links">
-<li><a href="/">Home</a></li>
-<li><a href="/about/">About</a></li>
-<li><a href="/projects/">Projects</a></li>
-<li><a href="/security/">Security</a></li>
-<li><a class="active" href="/blog/">Blog</a></li>
-<li><a class="nav-cta" href="/#contact">Let's Talk</a></li>
-</ul>
+  <nav>
 
-<button
-  class="menu"
-  aria-label="Open navigation"
-  aria-expanded="false">
-  ☰
-</button>
+    <div class="container nav-inner">
 
-</div>
-</nav>
+      <a
+        class="logo"
+        href="/"
+        aria-label="Wasim Dev - Home"
+      >
+        WASIM<span>DEV</span>
+      </a>
 
 
-<main>
+      <ul class="nav-links">
 
-<!-- BLOG HERO -->
-<section class="hero">
-<div class="container">
+        <li>
+          <a href="/">
+            Home
+          </a>
+        </li>
 
-<span class="tag">Wasim Dev · Blog</span>
+        <li>
+          <a href="/about">
+            About
+          </a>
+        </li>
 
-<h1>
-Ideas, Research &amp;
-<span class="gold">Insights.</span>
-</h1>
+        <li>
+          <a href="/projects">
+            Projects
+          </a>
+        </li>
 
-<p class="lead">
-Exploring law, technology, cybersecurity, web development,
-penetration testing and the evolving digital world.
-</p>
+        <li>
+          <a href="/security">
+            Security
+          </a>
+        </li>
 
-<div class="actions">
-<a class="btn btn-primary" href="#articles">
-Explore Articles →
-</a>
+        <li>
+          <a
+            href="/blog/"
+            aria-current="page"
+          >
+            Blog
+          </a>
+        </li>
 
-<a class="btn btn-secondary" href="/">
-Back to Home
-</a>
-</div>
+        <li>
+          <a
+            class="nav-cta"
+            href="/#contact"
+          >
+            Let's Talk →
+          </a>
+        </li>
 
-</div>
-</section>
+      </ul>
 
 
-<!-- BLOG CONTENT -->
-<section id="articles">
+      <button
+        class="menu"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
 
-<div class="container">
+    </div>
 
-<div class="section-head">
+  </nav>
 
-<span class="tag">Latest Writing</span>
 
-<h2>Articles &amp; Research</h2>
 
-<p>
-Practical knowledge, technical research and perspectives
-from the intersection of law and technology.
-</p>
+  <main>
 
-</div>
 
+    <!-- ==================================================
+         HERO
+    =================================================== -->
 
-<div class="grid">
+    <section class="page-hero blog-hero">
 
+      <div class="container">
 
-<!-- ARTICLE 1 -->
-<article class="card">
+        <span class="tag">
+          WASIM DEV · BLOG
+        </span>
 
-<div class="icon">⚖</div>
 
-<span class="tag">Law</span>
+        <h1>
+          Ideas, Research &
+          <span class="gold">
+            Insights.
+          </span>
+        </h1>
 
-<h3>
-The Sentencing Paradox in Bangladesh
-</h3>
 
-<p>
-Exploring judicial discretion, sentencing disparity and
-the need for structured sentencing guidelines in Bangladesh.
-</p>
+        <p class="lead">
+          Exploring law, technology, cybersecurity, web development,
+          penetration testing and the evolving digital world.
+        </p>
 
-<div class="chips">
-<span class="chip">Law</span>
-<span class="chip">Research</span>
-<span class="chip">Bangladesh</span>
-</div>
 
-<a
-class="gold"
-href="/blog/sentencing-paradox-bangladesh/">
-Read Article →
-</a>
+        <div class="hero-actions">
 
-</article>
+          <a
+            class="btn btn-primary"
+            href="#articles"
+          >
+            Explore Articles →
+          </a>
 
 
-<!-- ARTICLE 2 -->
-<article class="card">
+          <a
+            class="btn btn-secondary"
+            href="/"
+          >
+            Back to Home
+          </a>
 
-<div class="icon">⌘</div>
+        </div>
 
-<span class="tag">Technology</span>
+      </div>
 
-<h3>
-Building Modern Web Applications
-</h3>
+    </section>
 
-<p>
-Thoughts on developing fast, responsive and scalable web
-applications using modern technologies and development practices.
-</p>
 
-<div class="chips">
-<span class="chip">Web Development</span>
-<span class="chip">JavaScript</span>
-<span class="chip">Technology</span>
-</div>
 
-<a
-class="gold"
-href="/blog/modern-web-development/">
-Read Article →
-</a>
+    <!-- ==================================================
+         LATEST WRITING
+    =================================================== -->
 
-</article>
+    <section
+      id="articles"
+      aria-labelledby="articles-title"
+    >
 
+      <div class="container">
 
-<!-- ARTICLE 3 -->
-<article class="card">
 
-<div class="icon">◈</div>
+        <div class="section-heading">
 
-<span class="tag">Cybersecurity</span>
+          <span class="tag">
+            LATEST WRITING
+          </span>
 
-<h3>
-Understanding Web Application Security
-</h3>
 
-<p>
-An introduction to common web application vulnerabilities,
-security testing methodologies and responsible disclosure.
-</p>
+          <h2 id="articles-title">
+            Articles &
+            <span class="gold">
+              Research
+            </span>
+          </h2>
 
-<div class="chips">
-<span class="chip">Cybersecurity</span>
-<span class="chip">OWASP</span>
-<span class="chip">Security</span>
-</div>
 
-<a
-class="gold"
-href="/blog/web-application-security/">
-Read Article →
-</a>
+          <p>
+            Practical knowledge, legal research, technical insights
+            and perspectives from the intersection of law and technology.
+          </p>
 
-</article>
+        </div>
 
 
-<!-- ARTICLE 4 -->
-<article class="card">
 
-<div class="icon">⚠</div>
+        <div class="post-list">
 
-<span class="tag">Bug Bounty</span>
 
-<h3>
-A Practical Introduction to Bug Bounty Hunting
-</h3>
+          <!-- ==================================================
+               FEATURED — SENTENCING PARADOX
+          =================================================== -->
 
-<p>
-Understanding responsible vulnerability research, reconnaissance,
-testing methodology and ethical security research.
-</p>
+          <article
+            class="card post featured-post"
+            itemscope
+            itemtype="https://schema.org/BlogPosting"
+          >
 
-<div class="chips">
-<span class="chip">Bug Bounty</span>
-<span class="chip">Pentesting</span>
-<span class="chip">Research</span>
-</div>
+            <div class="post-top">
 
-<a
-class="gold"
-href="/blog/bug-bounty-guide/">
-Read Article →
-</a>
+              <span class="tag">
+                LAW · CRIMINAL JUSTICE
+              </span>
 
-</article>
 
+              <span class="post-label">
+                Featured Research
+              </span>
 
-<!-- ARTICLE 5 -->
-<article class="card">
+            </div>
 
-<div class="icon">🔐</div>
 
-<span class="tag">Security</span>
+            <h3 itemprop="headline">
 
-<h3>
-Why Cybersecurity Matters in the Digital Age
-</h3>
+              <a
+                href="/blog/sentencing-paradox-bangladesh/"
+                itemprop="url"
+              >
+                The Sentencing Paradox in Bangladesh
+              </a>
 
-<p>
-Understanding the growing importance of cybersecurity,
-privacy and responsible technology in modern society.
-</p>
+            </h3>
 
-<div class="chips">
-<span class="chip">Cybersecurity</span>
-<span class="chip">Privacy</span>
-<span class="chip">Technology</span>
-</div>
 
-<a
-class="gold"
-href="/blog/cybersecurity-digital-age/">
-Read Article →
-</a>
+            <p itemprop="description">
+              Deconstructing judicial sentencing discretion,
+              sentencing disparity and the case for a more structured
+              sentencing framework in Bangladesh.
+            </p>
 
-</article>
 
+            <div class="chips">
 
-<!-- ARTICLE 6 -->
-<article class="card">
+              <span class="chip">
+                Law
+              </span>
 
-<div class="icon">💻</div>
+              <span class="chip">
+                Criminal Justice
+              </span>
 
-<span class="tag">Development</span>
+              <span class="chip">
+                Bangladesh
+              </span>
 
-<h3>
-From Idea to Production: Building Better Projects
-</h3>
+              <span class="chip">
+                Legal Research
+              </span>
 
-<p>
-Lessons and principles for turning software ideas into
-reliable, maintainable and useful digital products.
-</p>
+            </div>
 
-<div class="chips">
-<span class="chip">Development</span>
-<span class="chip">Projects</span>
-<span class="chip">Engineering</span>
-</div>
 
-<a
-class="gold"
-href="/blog/building-better-projects/">
-Read Article →
-</a>
+            <div
+              class="post-meta"
+              itemprop="author"
+              itemscope
+              itemtype="https://schema.org/Person"
+            >
 
-</article>
+              By
 
-</div>
+              <span itemprop="name">
+                MD Wasimul Bari Shah
+              </span>
 
-</div>
+            </div>
 
-</section>
 
+            <a
+              class="article-link"
+              href="/blog/sentencing-paradox-bangladesh/"
+              aria-label="Read The Sentencing Paradox in Bangladesh by Wasim Dev"
+            >
+              Read Article →
+            </a>
 
-<!-- TOPICS -->
-<section>
+          </article>
 
-<div class="container">
 
-<div class="section-head">
 
-<span class="tag">Explore</span>
+          <!-- ==================================================
+               WEB DEVELOPMENT
+          =================================================== -->
 
-<h2>Topics</h2>
+          <article
+            class="card post"
+            itemscope
+            itemtype="https://schema.org/BlogPosting"
+          >
 
-<p>
-Browse the areas I write and research about.
-</p>
+            <span class="tag">
+              TECHNOLOGY
+            </span>
 
-</div>
 
+            <h3 itemprop="headline">
 
-<div class="facts">
+              <a
+                href="/blog/modern-web-applications/"
+                itemprop="url"
+              >
+                Building Modern Web Applications
+              </a>
 
-<div class="fact">
-<strong>Law</strong>
-<span>Legal systems &amp; research</span>
-</div>
+            </h3>
 
-<div class="fact">
-<strong>Technology</strong>
-<span>Software &amp; digital innovation</span>
-</div>
 
-<div class="fact">
-<strong>Cybersecurity</strong>
-<span>Security &amp; vulnerability research</span>
-</div>
+            <p itemprop="description">
+              Thoughts on developing fast, responsive and scalable
+              web applications using modern technologies and
+              development practices.
+            </p>
 
-<div class="fact">
-<strong>Development</strong>
-<span>Web &amp; application development</span>
-</div>
 
-</div>
+            <div class="chips">
 
-</div>
+              <span class="chip">
+                Web Development
+              </span>
 
-</section>
+              <span class="chip">
+                JavaScript
+              </span>
 
+              <span class="chip">
+                Technology
+              </span>
 
-<!-- CTA -->
-<section id="contact">
+            </div>
 
-<div class="container">
 
-<div class="card">
+            <a
+              class="article-link"
+              href="/blog/modern-web-applications/"
+            >
+              Read Article →
+            </a>
 
-<span class="tag">Connect</span>
+          </article>
 
-<h2>
-Have an idea or want to collaborate?
-</h2>
 
-<p class="lead">
-Whether it's technology, security, research or a new project,
-feel free to get in touch.
-</p>
 
-<a
-class="btn btn-primary"
-href="mailto:webpentester404@gmail.com">
-Let's Talk →
-</a>
+          <!-- ==================================================
+               WEB SECURITY
+          =================================================== -->
 
-</div>
+          <article
+            class="card post"
+            itemscope
+            itemtype="https://schema.org/BlogPosting"
+          >
 
-</div>
+            <span class="tag">
+              CYBERSECURITY
+            </span>
 
-</section>
 
-</main>
+            <h3 itemprop="headline">
 
+              <a
+                href="/blog/web-application-security/"
+                itemprop="url"
+              >
+                Understanding Web Application Security
+              </a>
 
-<footer>
+            </h3>
 
-<div class="container footer-inner">
 
-<div>
-© <span id="year"></span>
-<strong>Wasim Dev</strong>
-· MD Wasimul Bari Shah
-</div>
+            <p itemprop="description">
+              An introduction to common web application
+              vulnerabilities, security testing methodologies
+              and responsible disclosure.
+            </p>
 
-<div>
-<a href="/">wasimdev.me</a>
-· University of Rajshahi
-</div>
 
-</div>
+            <div class="chips">
 
-</footer>
+              <span class="chip">
+                Cybersecurity
+              </span>
 
+              <span class="chip">
+                OWASP
+              </span>
 
-<script src="/assets/script.js" defer></script>
+              <span class="chip">
+                Security
+              </span>
+
+            </div>
+
+
+            <a
+              class="article-link"
+              href="/blog/web-application-security/"
+            >
+              Read Article →
+            </a>
+
+          </article>
+
+
+
+          <!-- ==================================================
+               BUG BOUNTY
+          =================================================== -->
+
+          <article
+            class="card post"
+            itemscope
+            itemtype="https://schema.org/BlogPosting"
+          >
+
+            <span class="tag">
+              BUG BOUNTY
+            </span>
+
+
+            <h3 itemprop="headline">
+
+              <a
+                href="/blog/bug-bounty-hunting/"
+                itemprop="url"
+              >
+                A Practical Introduction to Bug Bounty Hunting
+              </a>
+
+            </h3>
+
+
+            <p itemprop="description">
+              Understanding responsible vulnerability research,
+              reconnaissance, testing methodology and ethical
+              security research.
+            </p>
+
+
+            <div class="chips">
+
+              <span class="chip">
+                Bug Bounty
+              </span>
+
+              <span class="chip">
+                Pentesting
+              </span>
+
+              <span class="chip">
+                Research
+              </span>
+
+            </div>
+
+
+            <a
+              class="article-link"
+              href="/blog/bug-bounty-hunting/"
+            >
+              Read Article →
+            </a>
+
+          </article>
+
+
+
+          <!-- ==================================================
+               CYBERSECURITY
+          =================================================== -->
+
+          <article
+            class="card post"
+            itemscope
+            itemtype="https://schema.org/BlogPosting"
+          >
+
+            <span class="tag">
+              SECURITY
+            </span>
+
+
+            <h3 itemprop="headline">
+
+              <a
+                href="/blog/cybersecurity-digital-age/"
+                itemprop="url"
+              >
+                Why Cybersecurity Matters in the Digital Age
+              </a>
+
+            </h3>
+
+
+            <p itemprop="description">
+              Understanding the growing importance of cybersecurity,
+              privacy and responsible technology in modern society.
+            </p>
+
+
+            <div class="chips">
+
+              <span class="chip">
+                Cybersecurity
+              </span>
+
+              <span class="chip">
+                Privacy
+              </span>
+
+              <span class="chip">
+                Technology
+              </span>
+
+            </div>
+
+
+            <a
+              class="article-link"
+              href="/blog/cybersecurity-digital-age/"
+            >
+              Read Article →
+            </a>
+
+          </article>
+
+
+
+          <!-- ==================================================
+               DEVELOPMENT
+          =================================================== -->
+
+          <article
+            class="card post"
+            itemscope
+            itemtype="https://schema.org/BlogPosting"
+          >
+
+            <span class="tag">
+              DEVELOPMENT
+            </span>
+
+
+            <h3 itemprop="headline">
+
+              <a
+                href="/blog/from-idea-to-production/"
+                itemprop="url"
+              >
+                From Idea to Production: Building Better Projects
+              </a>
+
+            </h3>
+
+
+            <p itemprop="description">
+              Lessons and principles for turning software ideas
+              into reliable, maintainable and useful digital products.
+            </p>
+
+
+            <div class="chips">
+
+              <span class="chip">
+                Development
+              </span>
+
+              <span class="chip">
+                Projects
+              </span>
+
+              <span class="chip">
+                Engineering
+              </span>
+
+            </div>
+
+
+            <a
+              class="article-link"
+              href="/blog/from-idea-to-production/"
+            >
+              Read Article →
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         AUTHOR / IDENTITY SECTION
+         Helps users and search engines understand the creator.
+    =================================================== -->
+
+    <section
+      class="author-section"
+      aria-labelledby="author-title"
+    >
+
+      <div class="container">
+
+        <div class="card author-card">
+
+          <span class="tag">
+            ABOUT THE AUTHOR
+          </span>
+
+
+          <h2 id="author-title">
+
+            Wasim Dev —
+            <span class="gold">
+              MD Wasimul Bari Shah
+            </span>
+
+          </h2>
+
+
+          <p>
+
+            Wasim Dev is the online identity of
+            <strong>MD Wasimul Bari Shah</strong>, a Law and Land
+            Administration student at the University of Rajshahi,
+            Web & App Developer, Penetration Tester and Bug Bounty
+            Hunter from Bangladesh.
+
+          </p>
+
+
+          <p>
+
+            His writing explores the intersection of
+            <strong>law, technology and cybersecurity</strong>,
+            including legal research, digital security,
+            software development and responsible security research.
+
+          </p>
+
+
+          <div class="chips">
+
+            <span class="chip">
+              Wasim Dev
+            </span>
+
+            <span class="chip">
+              MD Wasimul Bari Shah
+            </span>
+
+            <span class="chip">
+              Law
+            </span>
+
+            <span class="chip">
+              Technology
+            </span>
+
+            <span class="chip">
+              Cybersecurity
+            </span>
+
+          </div>
+
+
+          <a
+            class="article-link"
+            href="/about"
+          >
+            More About Wasim Dev →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TOPICS
+    =================================================== -->
+
+    <section
+      aria-labelledby="topics-title"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="tag">
+            EXPLORE
+          </span>
+
+
+          <h2 id="topics-title">
+            Research &
+            <span class="gold">
+              Topics
+            </span>
+          </h2>
+
+
+          <p>
+            Browse the areas Wasim Dev writes and researches about.
+          </p>
+
+        </div>
+
+
+
+        <div class="grid topic-grid">
+
+
+          <article class="card">
+
+            <span class="tag">
+              LAW
+            </span>
+
+
+            <h3>
+              Legal Systems & Research
+            </h3>
+
+
+            <p>
+              Legal research, criminal justice, judicial systems,
+              legal policy and the relationship between law
+              and technology.
+            </p>
+
+          </article>
+
+
+
+          <article class="card">
+
+            <span class="tag">
+              TECHNOLOGY
+            </span>
+
+
+            <h3>
+              Software & Digital Innovation
+            </h3>
+
+
+            <p>
+              Web development, applications, emerging technologies
+              and practical software engineering.
+            </p>
+
+          </article>
+
+
+
+          <article class="card">
+
+            <span class="tag">
+              CYBERSECURITY
+            </span>
+
+
+            <h3>
+              Security & Vulnerability Research
+            </h3>
+
+
+            <p>
+              Web security, penetration testing, responsible
+              disclosure and cybersecurity research.
+            </p>
+
+          </article>
+
+
+
+          <article class="card">
+
+            <span class="tag">
+              DEVELOPMENT
+            </span>
+
+
+            <h3>
+              Web & Application Development
+            </h3>
+
+
+            <p>
+              Development practices, project building,
+              engineering lessons and digital products.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CONNECT
+    =================================================== -->
+
+    <section
+      class="blog-connect"
+      aria-labelledby="connect-title"
+    >
+
+      <div class="container">
+
+        <div class="card connect-card">
+
+          <span class="tag">
+            CONNECT
+          </span>
+
+
+          <h2 id="connect-title">
+
+            Have an idea or want to
+            <span class="gold">
+              collaborate?
+            </span>
+
+          </h2>
+
+
+          <p>
+            Whether it's technology, security, legal research
+            or a new project, feel free to get in touch.
+          </p>
+
+
+          <a
+            class="btn btn-primary"
+            href="/#contact"
+          >
+            Let's Talk →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- ==================================================
+       FOOTER
+  =================================================== -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div>
+
+        © <span id="year"></span>
+
+        <strong>
+          Wasim Dev
+        </strong>
+
+        · MD Wasimul Bari Shah
+
+      </div>
+
+
+      <div>
+
+        wasimdev.me · University of Rajshahi
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ==================================================
+       JAVASCRIPT
+  =================================================== -->
+
+  <script
+    src="/assets/script.js"
+    defer
+  ></script>
 
 </body>
+
 </html>
