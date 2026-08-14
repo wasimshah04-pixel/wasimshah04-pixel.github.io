@@ -1,3 +1,4 @@
+```
 /* =========================================================
    WASIM DEV — CLEAN PREMIUM PORTFOLIO
    Black / Gold / Cyber-Law
@@ -170,7 +171,7 @@ ol {
 ========================= */
 
 .site-header,
-nav {
+body > nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -1906,7 +1907,7 @@ body:not(.page-ready) .hero-stats {
     }
 
     .site-header,
-    nav {
+    body > nav {
         padding: 15px 0;
     }
 
