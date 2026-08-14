@@ -1,42 +1,473 @@
-<!doctype html><html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Wasim Dev Security | Penetration Testing & Bug Bounty</title>
-<meta name="description" content="Security research by Wasim Dev, covering penetration testing, web application security, vulnerability research and authorized bug bounty work.">
-<meta name="author" content="MD Wasimul Bari Shah">
-<link rel="canonical" href="https://wasimdev.me/security">
-<meta property="og:type" content="website"><meta property="og:title" content="Wasim Dev Security | Penetration Testing & Bug Bounty"><meta property="og:description" content="Security research by Wasim Dev, covering penetration testing, web application security, vulnerability research and authorized bug bounty work."><meta property="og:url" content="https://wasimdev.me/security"><meta property="og:site_name" content="Wasim Dev">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Wasim Dev Security | Penetration Testing & Bug Bounty"><meta name="twitter:description" content="Security research by Wasim Dev, covering penetration testing, web application security, vulnerability research and authorized bug bounty work.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css">
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebSite",
-  "name":"Wasim Dev",
-  "alternateName":["Wasim","WasimDev","MD Wasimul Bari Shah"],
-  "url":"https://wasimdev.me/"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "@id":"https://wasimdev.me/#person",
-  "name":"MD Wasimul Bari Shah",
-  "alternateName":["Wasim","Wasim Dev","WasimDev"],
-  "url":"https://wasimdev.me/",
-  "jobTitle":"Web Developer & Security Researcher",
-  "description":"Law student, Web & App Developer, Penetration Tester and Bug Bounty Hunter.",
-  "affiliation":{"@type":"CollegeOrUniversity","name":"University of Rajshahi","url":"https://www.ru.ac.bd/"},
-  "knowsAbout":["Web Development","App Development","Cybersecurity","Penetration Testing","Bug Bounty Hunting","Law","Land Administration"]
-}
-</script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Wasim Dev Security | Penetration Testing, Cybersecurity & Bug Bounty</title>
+
+  <meta
+    name="description"
+    content="Explore cybersecurity and security research by Wasim Dev (MD Wasimul Bari Shah), covering web application security, penetration testing, vulnerability research and responsible bug bounty practices."
+  >
+
+  <meta
+    name="keywords"
+    content="Wasim Dev, WasimDev, MD Wasimul Bari Shah, Wasim Shah, cybersecurity, security researcher, penetration testing, bug bounty, web application security, vulnerability research, OWASP, Bangladesh"
+  >
+
+  <meta name="author" content="MD Wasimul Bari Shah">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#050505">
+
+  <link rel="canonical" href="https://wasimdev.me/security/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wasim Dev Security | Cybersecurity & Security Research">
+  <meta
+    property="og:description"
+    content="Cybersecurity interests and security research by Wasim Dev (MD Wasimul Bari Shah), including web application security, penetration testing and responsible vulnerability research."
+  >
+  <meta property="og:url" content="https://wasimdev.me/security/">
+  <meta property="og:site_name" content="Wasim Dev">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Wasim Dev Security | Cybersecurity & Security Research">
+  <meta
+    name="twitter:description"
+    content="Cybersecurity, penetration testing, web application security and responsible vulnerability research by Wasim Dev."
+  >
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <!-- WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://wasimdev.me/#website",
+    "name": "Wasim Dev",
+    "alternateName": [
+      "Wasim",
+      "WasimDev",
+      "MD Wasimul Bari Shah"
+    ],
+    "url": "https://wasimdev.me/"
+  }
+  </script>
+
+  <!-- Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://wasimdev.me/#person",
+    "name": "MD Wasimul Bari Shah",
+    "alternateName": [
+      "Wasim Dev",
+      "Wasim",
+      "WasimDev"
+    ],
+    "url": "https://wasimdev.me/",
+    "jobTitle": "Web Developer & Security Researcher",
+    "description": "Law student, web developer, security researcher and penetration testing enthusiast from Bangladesh.",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Rajshahi",
+      "url": "https://www.ru.ac.bd/"
+    },
+    "knowsAbout": [
+      "Cybersecurity",
+      "Web Application Security",
+      "Penetration Testing",
+      "Vulnerability Research",
+      "Bug Bounty Hunting",
+      "Web Development",
+      "Application Development",
+      "Law",
+      "Land Administration"
+    ]
+  }
+  </script>
+
+  <!-- Security Page Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://wasimdev.me/security/#webpage",
+    "url": "https://wasimdev.me/security/",
+    "name": "Wasim Dev Security | Penetration Testing, Cybersecurity & Bug Bounty",
+    "description": "Cybersecurity and security research interests of Wasim Dev, including web application security, penetration testing, vulnerability research and responsible bug bounty practices.",
+    "isPartOf": {
+      "@id": "https://wasimdev.me/#website"
+    },
+    "about": {
+      "@id": "https://wasimdev.me/#person"
+    },
+    "author": {
+      "@id": "https://wasimdev.me/#person"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://wasimdev.me/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Security",
+        "item": "https://wasimdev.me/security/"
+      }
+    ]
+  }
+  </script>
 </head>
-<body><nav><div class="container nav-inner">
-<a class="logo" href="/">WASIM<span>DEV</span></a>
-<ul class="nav-links">
-<li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/projects">Projects</a></li><li><a href="/security">Security</a></li><li><a href="/blog">Blog</a></li><li><a class="nav-cta" href="/#contact">Let's Talk</a></li>
-</ul><button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
-</div></nav><main><section class="page-hero"><div class="container"><span class="tag">Cybersecurity</span><h1>Security & <span class="gold">Research</span></h1><p class="lead">Wasim Dev's interests in web application security, penetration testing and responsible vulnerability research.</p></div></section>
-<section><div class="container"><div class="grid"><article class="card"><div class="icon">◈</div><h3>Web Application Security</h3><p>Understanding common web vulnerabilities, secure coding practices and defensive controls.</p><div class="chips"><span class="chip">OWASP Top 10</span><span class="chip">XSS</span><span class="chip">SQLi</span></div></article><article class="card"><div class="icon">⌁</div><h3>Penetration Testing</h3><p>Learning and applying authorized security assessment methodologies in controlled environments.</p><div class="chips"><span class="chip">Burp Suite</span><span class="chip">Nmap</span><span class="chip">Recon</span></div></article><article class="card"><div class="icon">⚠</div><h3>Bug Bounty</h3><p>Responsible vulnerability disclosure through authorized bug bounty and security programs.</p><div class="chips"><span class="chip">HackerOne</span><span class="chip">Bugcrowd</span><span class="chip">Responsible Disclosure</span></div></article></div></div></section></main><footer><div class="container footer-inner"><div>© <span id="year"></span> <strong>Wasim Dev</strong> · MD Wasimul Bari Shah</div><div>wasimdev.me · University of Rajshahi</div></div></footer><script src="/assets/script.js" defer></script></body></html>
+
+<body>
+
+  <!-- Navigation -->
+  <nav aria-label="Primary navigation">
+    <div class="container nav-inner">
+
+      <a class="logo" href="/" aria-label="Wasim Dev home">
+        WASIM<span>DEV</span>
+      </a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="/about/">About</a>
+        </li>
+
+        <li>
+          <a href="/projects/">Projects</a>
+        </li>
+
+        <li>
+          <a href="/security/" aria-current="page">Security</a>
+        </li>
+
+        <li>
+          <a href="/blog/">Blog</a>
+        </li>
+
+        <li>
+          <a class="nav-cta" href="/#contact">Let's Talk</a>
+        </li>
+      </ul>
+
+      <button
+        class="menu"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container">
+
+        <span class="tag">Cybersecurity</span>
+
+        <h1>
+          Security &amp;
+          <span class="gold">Research</span>
+        </h1>
+
+        <p class="lead">
+          Exploring web application security, penetration testing,
+          vulnerability research and responsible security practices
+          through the work of Wasim Dev.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="/projects/">
+            View Projects →
+          </a>
+
+          <a class="btn btn-secondary" href="/blog/">
+            Read Security Writing →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Security Areas -->
+    <section aria-labelledby="security-focus">
+      <div class="container">
+
+        <span class="tag">Security Focus</span>
+
+        <h2 id="security-focus">
+          Cybersecurity,
+          <span class="gold">Testing &amp; Research</span>
+        </h2>
+
+        <p class="section-lead">
+          Areas of cybersecurity and technical security research
+          explored by Wasim Dev, with an emphasis on responsible
+          testing, vulnerability analysis and defensive practices.
+        </p>
+
+
+        <div class="grid">
+
+          <!-- Web Application Security -->
+          <article class="card">
+            <div class="icon" aria-hidden="true">◈</div>
+
+            <h3>Web Application Security</h3>
+
+            <p>
+              Understanding common web application vulnerabilities,
+              secure coding practices and defensive security controls.
+            </p>
+
+            <div class="chips" aria-label="Web application security topics">
+              <span class="chip">OWASP Top 10</span>
+              <span class="chip">XSS</span>
+              <span class="chip">SQLi</span>
+            </div>
+          </article>
+
+
+          <!-- Penetration Testing -->
+          <article class="card">
+            <div class="icon" aria-hidden="true">⌁</div>
+
+            <h3>Penetration Testing</h3>
+
+            <p>
+              Learning and applying authorized security assessment
+              methodologies in controlled environments to identify
+              vulnerabilities and improve security.
+            </p>
+
+            <div class="chips" aria-label="Penetration testing topics">
+              <span class="chip">Burp Suite</span>
+              <span class="chip">Nmap</span>
+              <span class="chip">Recon</span>
+            </div>
+          </article>
+
+
+          <!-- Bug Bounty -->
+          <article class="card">
+            <div class="icon" aria-hidden="true">⚠</div>
+
+            <h3>Bug Bounty &amp; Responsible Disclosure</h3>
+
+            <p>
+              Responsible vulnerability research and disclosure through
+              authorized bug bounty programs and security testing
+              environments.
+            </p>
+
+            <div class="chips" aria-label="Bug bounty topics">
+              <span class="chip">HackerOne</span>
+              <span class="chip">Bugcrowd</span>
+              <span class="chip">Responsible Disclosure</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Research Philosophy -->
+    <section aria-labelledby="security-philosophy">
+      <div class="container">
+
+        <div class="card feature-card">
+
+          <span class="tag">Research Approach</span>
+
+          <h2 id="security-philosophy">
+            Security with
+            <span class="gold">Responsibility.</span>
+          </h2>
+
+          <p>
+            Security research is most useful when it helps people
+            understand vulnerabilities and build safer systems.
+            My approach focuses on authorized testing, responsible
+            disclosure, defensive thinking and continuous learning.
+          </p>
+
+          <div class="chips">
+            <span class="chip">Authorized Testing</span>
+            <span class="chip">Responsible Disclosure</span>
+            <span class="chip">Defensive Security</span>
+            <span class="chip">Continuous Learning</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Explore -->
+    <section aria-labelledby="explore-security">
+      <div class="container">
+
+        <span class="tag">Explore</span>
+
+        <h2 id="explore-security">
+          More from
+          <span class="gold">Wasim Dev</span>
+        </h2>
+
+        <p class="section-lead">
+          Explore projects, background and long-form writing covering
+          technology, cybersecurity and the intersection of law and
+          digital systems.
+        </p>
+
+
+        <div class="grid">
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">◇</div>
+
+            <h3>Projects</h3>
+
+            <p>
+              Explore selected web applications, software projects,
+              automation tools and security-focused work.
+            </p>
+
+            <a class="text-link" href="/projects/">
+              View Projects →
+            </a>
+          </article>
+
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">✦</div>
+
+            <h3>About Wasim Dev</h3>
+
+            <p>
+              Learn more about MD Wasimul Bari Shah, his academic
+              background and interests across law and technology.
+            </p>
+
+            <a class="text-link" href="/about/">
+              About Wasim Dev →
+            </a>
+          </article>
+
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">✧</div>
+
+            <h3>Wasim Dev Blog</h3>
+
+            <p>
+              Read articles and research covering law, technology,
+              cybersecurity and digital society.
+            </p>
+
+            <a class="text-link" href="/blog/">
+              Read the Blog →
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Contact CTA -->
+    <section aria-labelledby="security-contact">
+      <div class="container">
+
+        <div class="card cta-card">
+
+          <span class="tag">Connect</span>
+
+          <h2 id="security-contact">
+            Have a security,
+            <span class="gold">technology or research idea?</span>
+          </h2>
+
+          <p>
+            Interested in cybersecurity, software development,
+            legal research or a new digital project? Let's connect.
+          </p>
+
+          <a class="btn" href="/#contact">
+            Let's Talk →
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+
+      <div>
+        © <span id="year"></span>
+        <strong>Wasim Dev</strong>
+        · MD Wasimul Bari Shah
+      </div>
+
+      <div>
+        wasimdev.me · University of Rajshahi
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="/assets/script.js" defer></script>
+
+</body>
+</html>
