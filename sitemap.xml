@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://wasimdev.me/</loc></url>
-  <url><loc>https://wasimdev.me/about</loc></url>
-  <url><loc>https://wasimdev.me/projects</loc></url>
-  <url><loc>https://wasimdev.me/security</loc></url>
-  <url><loc>https://wasimdev.me/blog</loc></url>
+
+  <url>
+    <loc>https://wasimdev.me/</loc>
+  </url>
+
+  <url>
+    <loc>https://wasimdev.me/about/</loc>
+  </url>
+
+  <url>
+    <loc>https://wasimdev.me/projects/</loc>
+  </url>
+
+  <url>
+    <loc>https://wasimdev.me/security/</loc>
+  </url>
+
+  <url>
+    <loc>https://wasimdev.me/blog/</loc>
+  </url>
+
+  <url>
+    <loc>https://wasimdev.me/blog/sentencing-paradox-bangladesh/</loc>
+  </url>
+
 </urlset>
